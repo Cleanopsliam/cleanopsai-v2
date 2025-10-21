@@ -11,14 +11,20 @@ export function baseMetadata(pathname: string): Metadata {
     description,
     alternates: { canonical: url.pathname },
     openGraph: {
-      title, description, url: url.toString(), siteName: site.name, type: 'website',
+      title, description: description, url: url.toString(), siteName: site.name, type: 'website',
       images: [{ url: site.ogImage, width: 1200, height: 630, alt: `${site.name} Open Graph` }],
     },
     twitter: { card: 'summary_large_image', title, description },
     robots: { index: true, follow: true },
     keywords: [
-      'cleaning business software','cleaning scheduling software','UK cleaners app',
-      'job scheduling','route optimization','cleaning payroll','Jobber alternative'
+      'cleaning business software',
+      'cleaning scheduling software',
+      'cleaning company CRM',
+      'field service software for cleaners',
+      'route optimization for cleaners',
+      'staff scheduling cleaning companies',
+      'client management cleaning',
+      'cleaning payroll software UK'
     ],
     icons: { icon: '/favicon/favicon.ico', apple: '/favicon/apple-touch-icon.png' }
   }
